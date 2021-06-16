@@ -1,3 +1,4 @@
+![screenshot](./screenshot.png)
 # Dreamer
 Theme for the RPGM Radio Mastodon instance.
 
