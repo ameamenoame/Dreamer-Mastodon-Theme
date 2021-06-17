@@ -116,61 +116,10 @@
 
 /* DREAMER THEME */
 
-/* :root {
---bg: #823349;
---text: #d0d8e0;
---textBold: #fff;
---textMuted: #808890;
-
---bgPage: #401823;
---textPage: var(--text);
---textPageBold: var(--textBold);
---textPageMuted: var(--textMuted);
-
---bgHead: #96324E;
---textHead: var(--textBold);
---accent: #F2A4B9;
---accentText: var(--textBold);
-} */
-/* :root {
---bg: #591f32;
---text: #d0d8e0;
---textBold: #fff;
---textMuted: #808890;
-
---bgPage: #2d0a15;
---textPage: var(--text);
---textPageBold: var(--textBold);
---textPageMuted: var(--textMuted);
-
---bgHead: #821B38;
---textHead: var(--textBold);
---accent: #BF547D;
---accentText: var(--textBold);
-} */
-/* :root {
---bg: #221233;
---text: #d0d8e0;
---textBold: #fff;
---textMuted: #808890;
-
---bgPage: #13031b;
---textPage: var(--text);
---textPageBold: var(--textBold);
---textPageMuted: var(--textMuted);
-
---bgHead: #3a204d;
---textHead: var(--textBold);
---accent: #b74d70;
---accentText: var(--textBold);
-} */
-
 :root {
-/* --bg: #552230; */
 --bg: #351a21;
 --text: #e1e9f1;
 --textBold: #fff;
-/* --textMuted: #b06694; */
 --textMuted: #b06694;
 
 --bgPage: #1e090f;
@@ -351,10 +300,11 @@ base background and text
 .landing-page__call-to-action,
 .public-layout .header,
 .public-layout .header .nav-link,
-.public-layout .header .nav-button
+.public-layout .header .nav-button,
+.picture-in-picture__footer, .picture-in-picture__header
 {
-background: var(--bg);
-color: var(--text)
+    background: var(--bg);
+    color: var(--text)
 }
 
 /*--------------------
@@ -773,6 +723,10 @@ accented buttons
         .status__content .status__content__spoiler-link:hover,
     .load-more:hover,
     .conversation__unread,
+
+    a.status-card:hover,
+    a.status-card.compact:hover,
+
 /* modals */
     .confirmation-modal__action-bar .confirmation-modal__cancel-button:active,
         .confirmation-modal__action-bar .confirmation-modal__cancel-button:focus,
@@ -835,9 +789,9 @@ accented links
         .reply-indicator__content a.unhandled-link,
         .reply-indicator__cancel .icon-button.inverted:hover,
     .status__content__read-more-button,
-    .icon-button.active,
+    /* .icon-button.active,
         .icon-button:focus,
-        .icon-button:hover,
+        .icon-button:hover, */
     .search__icon .fa:hover,
     .account__header__bio .account__header__fields a,
     .notification-follow .account .icon-button:hover,
@@ -930,7 +884,7 @@ accented links
 }
 
 .rules-list li {
-    border-color: var(--accent);
+    border-color: var(--bgHead);
 }
 
 .compose-panel .compose-form__autosuggest-wrapper {
@@ -967,4 +921,12 @@ accented links
 .public-account-header {
     background: var(--bg);
     border-radius: 4px;
+}
+
+.status-card, .status-card.compact {
+    border-color: var(--bgHead);
+}
+
+.simple_form select {
+    background-color: var(--bg);
 }
