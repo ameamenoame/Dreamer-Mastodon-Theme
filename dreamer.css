@@ -425,7 +425,14 @@ color: var(--textMuted);
 .account,
 .directory__card__extra .account__header__content,
 .account__section-headline, .notification__filter-bar,
-.actions-modal .dropdown-menu__separator, .actions-modal .status
+.actions-modal .dropdown-menu__separator, .actions-modal .status,
+.public-layout .public-account-header__extra .public-account-bio .account__header__fields,
+.account__header__bar .avatar .account__avatar,
+.account__header__tabs__buttons .icon-button,
+.public-layout .public-account-header__bar .avatar img,
+.public-layout .public-account-header__tabs__tabs .counter::after,
+.tabs-bar__link,
+.admin-wrapper .sidebar ul a, .admin-wrapper .sidebar ul ul a
 {border-color: var(--borderColor)}
 
 .account__header__account-note,
@@ -929,4 +936,13 @@ accented links
 
 .simple_form select {
     background-color: var(--bg);
+}
+
+.public-layout .public-account-header__bar {
+    background: none;
+}
+
+.column-list {
+    border-color: var(--borderColor);
+    background: var(--bgPage);
 }
